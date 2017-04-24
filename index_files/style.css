@@ -74,8 +74,8 @@ fieldset {
 .cover-small{
     width: 50px;
     height: 75px;
-    background: rgb(52, 101, 164);
-    color: rgb(138, 226, 52);
+    background: rgb(19, 38, 62);
+    color: rgb(250, 250, 250);
 }
 .pagination.list{
     text-align: center;
@@ -84,18 +84,19 @@ fieldset {
     display: block;
     padding: .2em;
     font-size: 2em;
-    background: rgb(138, 226, 52);
+    background: rgb(52, 101, 164);
     color: white;
     text-decoration: unset;
 }
 .pagination.list>.secondary>*:not(ul){
-    background: rgb(52, 101, 164);
+    background: rgb(19, 38, 62);
 }
 .pagination.list>.main>*:not(ul){
     background: rgb(52, 101, 164);
 }
 .pagination.list>*>span{
-    background: rgb(52, 101, 164);
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
 }
 
 .adbar{
@@ -133,7 +134,7 @@ fieldset {
     padding: .3em 0;
 }
 .novels.list>*>ul>*>a{
-    color: rgb(138, 226, 52);
+    color: rgb(98, 98, 98);
 }
 /* <---COMPLETE */
 
