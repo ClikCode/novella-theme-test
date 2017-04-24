@@ -1,13 +1,8 @@
 *{
-    box-sizing:border-box;
-    border: none;
-    padding: 0;
-    margin: 0;
-    word-wrap: break-word;
-    margin: auto;
+    overflow-wrap: break-word;
+    z-index: 1;
 }
 button:hover{
-    background: #dddddd;
 }
 body{
     font-size: 12px;
@@ -16,19 +11,13 @@ body{
     margin:0;
     font-size-adjust: 0.5;
     line-height: 1;
-    font-family: "sans-serif";
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
 }
 input,button{
-    font-size: inherit;
-    font-family: inherit;
-    padding-inline-start: .5em;
-    padding-inline-end: .5em;
 }
-input{
-	border-bottom: solid thin #aaa;
-	background: unset;
-}
-.landscape{
+input[type=text]{
+    max-width: 20em;
     width: 100%;
 }
 .reading-navigation{
@@ -47,11 +36,11 @@ input{
     text-decoration: unset;
     font-size: 2em;
 }
-.reading-title,.reading-content>*{
-    white-space: pre-wrap;
-}
 .reading-content>*{
     margin-bottom: 2.3em;
+}
+.whitespaced{
+    white-space: normal;
 }
 .normalize *{
     font-size: 1em;
@@ -59,16 +48,14 @@ input{
     font-family: "sans-serif";
 }
 .form-input-container{
-    background: #fff9;
+    background: rgba(255,255,255,0.3);
     padding: .5em;
-    border: #0002 solid;
     border-radius: .5em;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: "serif";
+    font-family: "Times New Roman", Georgia, serif;
 }
 li{
-    list-style-type: none;
 }
 fieldset {
     display: block;
@@ -78,199 +65,234 @@ fieldset {
     padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    border: .25em solid #0003;
+    border: .25em solid rgba(0,0,0,0.15);
     border-radius: .5em;
     background: initial;
 }
-.card>*{
-    margin-bottom: 3em;
-}
-.nav-item,.nav-item:link{
-    text-decoration: none;
-    color:#666;
-    font-weight:800;
-}
-.nav-item{
-    padding: 1em;
-    display: block;
-    font-size: 1em;
-    width: 100%;
-}
-.wrapper{
-    table-layout:  fixed;
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-.wrapper-auto{
-    table-layout:  auto;
-    
-}
-.wrapper>*{
-    display: table-row;
-    height:  1px;
-    vertical-align: top;
-}
-.wrapper-main{
-    height: 100%;
-}
 
-.book-listing{
-    max-width: 40em;
-}
-.book-listing-description{
-}
-.book-listing-details>.wrapper{
-}
-.book-listing-side{
-    text-align: center
-}
-.book-listing-more-button{
-    display: none;
-}
-.book-listing-more-button:checked~.book-listing-description{
-    height: unset;
-    overflow: unset;
-}
-.book-listing-more-button:checked{
-    position: unset;
-    background: green;
-}
-.book-listing-more-label, .book-listing-less-label{
-    text-align: center;
-}
-.book-listing>*{
-    display: table-row;
-}
 .cover-small{
-    margin: 0 auto;
     width: 50px;
     height: 75px;
     background: lightsalmon;
     border: greenyellow solid;
 }
-.pagination{
+.pagination.list{
+    text-align: center;
 }
-.pagination-item,
-.novel-updates-button{
+.pagination.list>*>*:not(ul){
     display: block;
-    text-decoration: none;
-    
-}
-.pagination-item{
-    padding: .5em;
-    border: solid #15f;
-    background: #07f;
+    padding: .2em;
+    font-size: 2em;
+    background: red;
     color: white;
-    font-size: 1.3em;
+    text-decoration: unset;
 }
-.novel-updates>*{
-    max-width: 35em;
+.pagination.list>*:nth-child(odd)>*:not(ul){
+    background: rgb(200,0,0);
 }
-.novel-updates-button{
-    color: #25f;
-    font-size: 1.3em;
+.pagination.list>.secondary>*:not(ul){
+    background: rgb(90,40,30);
 }
-.novel-genres>*{
-    display: inline-block;
+.pagination.list>.main>*:not(ul){
+    background: rgb(0,30,30);
 }
-.novel-genre-button,.novel-genre-button:link{
-	background: greenyellow;
-	padding: .2em;
-    
-	display: inline-block;
-    color: black;
-    
-/* 	border-radius: 0.4em; */
-/*     border: darkkhaki solid .2em; */
-    text-decoration: none;
+.pagination.list>*>span{
+    background: rgb(100,100,100);
 }
-.searchcombo-input{
-    width: 100%;
-    
-}
-.searchcombo-button{
-    /*! max-width: 100%; */
-    /*! width: 100%; */
-    border-radius: 1em;
-    background: #3ddd3d;
-    color: white;
-    font-weight: 800;
-}
+
 .adbar{
     background: #59f;
     font-size: 8em;
-    color: #3f5a;
+    color: rgba(51, 255, 85, 0.7);
     line-height: 1;
     text-align:center;
     margin: auto;
     max-width: 100%;
-    width: 6em;
     border: solid;
 }
-.container{
-    padding: 1em 0;
-}
 .card{
-    padding: 2em 0;
 }
-@media screen and (min-width: 30em){
-    .container{ 
-       padding: 1em;
-    }
-    .card{
-       padding: 2em 1.5em;
-       box-shadow: 0.2em 1em 1em #0009;
-    }
-    .reading-navigation>*{
-        display: inline-block;
-    }
-    .reading-navigation>*>*{
-        margin: .3em;
-        padding: .3em;
-    }
-    .pagination{
-       display: table;
-    }
-    .pagination>*{
-        display: table-cell;
-    }
-    .novel-genre-button{
-        margin: .15em;
-        border-radius: .3em
-    }
-    .wrapper-cells-on-30em{
-        display: table;
-    }
-    .wrapper-cells-on-30em>*{
-        display: table-cell;
-    }
+.card>*{
+    margin-bottom: 3em;
 }
 
-@media screen and (min-width: 50em){
-    .wrapper-cells-on-50em{
-        display: table;
-        table-layout: auto;
-    }
-    .wrapper-cells-on-50em>*{
-        display: table-cell;
+/* COMPLETE---> */
+.novels.list>*>ul{
+    padding-left: 1em;
+}
+.novels.list>*,
+.novels.list>*>ul>*{
+    display: inline-block;
+    margin: .2em;
+}
+.novels.list>*>ul>*>a,
+.novels.list>*>a{
+    display: inline-block;
+}
+.novels.list>*>a{
+    color: rgb(50,50,255);
+    font-size: 1.5em;
+    padding: .3em 0;
+}
+.novels.list>*>ul>*>a{
+    color: red;
+}
+/* <---COMPLETE */
+
+
+.nav.list>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav.list>*:not(ul)>*{
+    text-decoration: none;
+    color:rgb(138, 226, 52);
+    font-weight:800;
+    display: block;
+    font-size: 2em;
+    line-height: 2em;
+    padding: .2em;
+}
+.novel-listing{
+    overflow: auto;
+}
+.novel-listing>*{
+    display: inline-block;
+}
+.novel-listing>*:nth-child(1){
+    width: 70px;
+    text-align: center;
+}
+.novel-listing>*:nth-child(1)>*{
+    margin: auto;
+}
+.novel-listing>*:nth-child(2){
+}
+.background{
+    
+    background: rgb(203, 203, 203);
+}
+.header{
+    background: rgb(52, 101, 164);
+}
+.content{
+    
+    background: rgb(234, 234, 234);
+}
+.root{
+    
+}
+/* ------------------------------ */
+
+.landscape{
+    width: 100%;
+}
+.portrait{
+    height: 100%;
+}
+.block{
+    display: block;
+}
+.vpadding{
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+.vbox{
+    display: table;
+    height: 100%;
+    table-layout:  fixed;
+}
+.vbox>*{
+    display: table-row;
+}
+.hbox{
+    display: table;
+    width: 100%;
+    table-layout:  fixed;
+}
+.hbox>*{
+    display: table-cell;
+    width: 1px;
+}
+.vbox>.box-expand{
+    height: 100%;
+}
+.hbox>.box-expand{
+    width: 100%;
+}
+.top{
+    margin: auto;
+    margin-top: unset;
+}
+.bottom{
+    margin: auto;
+    margin-bottom: unset;
+}
+.left{
+    margin: auto;
+    margin-left: unset;
+}
+.right{
+    margin: auto;
+    margin-right: unset;
+}
+
+.list{
+    list-style: none;
+    padding: initial;
+}
+.list>*{
+    display: block;
+}
+
+.card{
+    box-shadow: 0.2em 1em 1em rgba(0, 0, 0, 0.6);
+}
+/* ------------------------------ */
+@media screen and (min-width:280px){
+    input[type=text],input[type=password]{
+        width:200px;
     }
 }
-@media screen and (min-width: 60em){
-    .wrapper-cells-on-60em{
+@media screen and (min-width: 25em){
+    
+    .hpadding-s{ 
+        padding: 0 .5em;
+    }
+    .pagination.list>*{
+        display: inline-block;
+    }
+    .pagination.list>*>*:not(ul){
+        border-radius: 3px;
+        margin: 5px;
+    }
+    .pagination.container>*{
+        display: inline-block;
+    }
+    .pagination.list.left{
+        float: left;
+    }
+    .pagination.list.right{
+        float: right;
+    }
+    .novel-listing>*{
+        display: table-cell;
+    }
+    .novel-listing{
         display: table;
         table-layout: auto;
+        max-width: 100%;
+        height: 100%;
     }
-    .wrapper-cells-on-60em>*{
-        display: table-cell;
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
     }
 }
-@media screen and (min-width: 80em){
-    .wrapper-cells-on-80em{
-        display: table;
-        table-layout: auto;
-    }
-    .wrapper-cells-on-80em>*{
-        display: table-cell;
+@media screen and (min-width: 35em){
+    .hpadding-s,.hpadding-m{ 
+        padding: 0 1em;
     }
 }
