@@ -11,14 +11,11 @@ body{
     margin:0;
     font-size-adjust: 0.5;
     line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif, Helvetica;
+    vertical-align: top;
     vertical-align: top;
 }
 input,button{
-}
-input[type=text]{
-    max-width: 20em;
-    width: 100%;
 }
 .reading-navigation{
     margin: auto;
@@ -53,8 +50,9 @@ input[type=text]{
     border-radius: .5em;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: "Times New Roman", Georgia, serif;
+    font-family: serif, Georgia, "Times New Roman";
     color: rgb(19, 38, 62);
+    font-weight: 900;
 }
 li{
 }
@@ -76,27 +74,13 @@ fieldset {
     height: 75px;
     background: rgb(19, 38, 62);
     color: rgb(250, 250, 250);
+    display: inline-block;
 }
-.pagination.list{
-    text-align: center;
-}
-.pagination.list>*>*:not(ul){
-    display: block;
-    padding: .2em;
-    font-size: 2em;
-    background: rgb(52, 101, 164);
-    color: white;
-    text-decoration: unset;
-}
-.pagination.list>.secondary>*:not(ul){
+.cover-large{
+    width: 67px;
+    height: 100px;
     background: rgb(19, 38, 62);
-}
-.pagination.list>.main>*:not(ul){
-    background: rgb(52, 101, 164);
-}
-.pagination.list>*>span{
-    background: rgb(138, 226, 52);
-    color: rgb(19, 38, 62);
+    color: rgb(250, 250, 250);
 }
 
 .adbar{
@@ -115,26 +99,66 @@ fieldset {
 }
 
 /* COMPLETE---> */
-.novels.list>*>ul{
-    padding-left: 1em;
+ul.genres{
+    padding: unset;
+    
+    font-size: small;
 }
-.novels.list>*,
-.novels.list>*>ul>*{
+ul.genres li{
     display: inline-block;
     margin: .2em;
-    color: rgb(52, 101, 164);
 }
-.novels.list>*>ul>*>a,
-.novels.list>*>a{
+ul.genres,ul.genres *{
+    color: rgb(255,255,255) !important;
+}
+ul.genres a{
+    background: rgb(52, 101, 164);
+    padding: 2px 4px;
+    border: solid thin rgb(204, 204, 204);
+    border-radius: 4px;
     display: inline-block;
+    text-decoration: none;
 }
-.novels.list>*>a{
+ul.newchapters, ul.newchapters a{
     color: rgb(52, 101, 164);
-    font-size: 1.5em;
-    padding: .3em 0;
+    text-decoration: none;
 }
-.novels.list>*>ul>*>a{
-    color: rgb(98, 98, 98);
+ul.newchapters{
+    font-size: 150%;
+    display: inline-block;
+    list-style: none;
+    padding: unset;
+}
+ul.pagination,
+ul.pagination ul{
+    text-align: center;
+    padding: unset;
+    margin: unset;
+    list-style: none;
+}
+ul.pagination a,
+ul.pagination span{
+    display: block;
+    padding: .2em;
+    font-size: 2em;
+    background: rgb(52, 101, 164);
+    color: white;
+    text-decoration: unset;
+}
+ul.pagination span,
+ul.pagination a:not(:link){
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+}
+ul.pagination .primary{
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+    
+}
+ul.pagination .secondary{
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+    
 }
 /* <---COMPLETE */
 
@@ -159,7 +183,6 @@ fieldset {
     display: inline-block;
 }
 .novel-listing>*:nth-child(1){
-    width: 70px;
     text-align: center;
 }
 .novel-listing>*:nth-child(1)>*{
@@ -235,6 +258,9 @@ fieldset {
     margin: auto;
     margin-right: unset;
 }
+.float-clear{
+    clear: both;
+}
 
 .list{
     list-style: none;
@@ -247,31 +273,24 @@ fieldset {
 .card{
 }
 /* ------------------------------ */
-@media screen and (min-width:280px){
-    input[type=text],input[type=password]{
-        width:200px;
-    }
-}
 @media screen and (min-width: 25em){
     
     .hpadding-s{ 
         padding: 0 .5em;
     }
-    .pagination.list>*{
+    ul.pagination li{
         display: inline-block;
     }
-    .pagination.list>*>*:not(ul){
+    ul.pagination .left{
+        float:left;
+    }
+    ul.pagination .right{
+        float:right;
+    }
+    ul.pagination a,
+    ul.pagination span{
         border-radius: 3px;
         margin: 5px;
-    }
-    .pagination.container>*{
-        display: inline-block;
-    }
-    .pagination.list.left{
-        float: left;
-    }
-    .pagination.list.right{
-        float: right;
     }
     .novel-listing>*{
         display: table-cell;
@@ -292,5 +311,14 @@ fieldset {
 @media screen and (min-width: 35em){
     .hpadding-s,.hpadding-m{ 
         padding: 0 1em;
+    }
+}
+@media screen and (min-width: 40em){
+    
+    .float-left-2{
+        float: left;
+    }
+    .float-right-2{
+        float: right;
     }
 }
