@@ -1,0 +1,324 @@
+*{
+    overflow-wrap: break-word;
+    z-index: 1;
+}
+button:hover{
+}
+body{
+    font-size: 12px;
+    box-sizing: border-box;
+    color: #444;
+    margin:0;
+    font-size-adjust: 0.5;
+    line-height: 1;
+    font-family: Arial, sans-serif, Helvetica;
+    vertical-align: top;
+    vertical-align: top;
+}
+input,button{
+}
+.reading-navigation{
+    margin: auto;
+    text-align: center;
+}
+.reading-navigation>*{
+    display: block;
+}
+.reading-navigation>*>*{
+        
+    padding: .3em 0;
+    display: block;
+    background: #eb0c0c;
+    color: white;
+    text-decoration: unset;
+    font-size: 2em;
+}
+.reading-content>*{
+    margin-bottom: 2.3em;
+}
+.whitespaced{
+    white-space: normal;
+}
+.normalize *{
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "sans-serif";
+}
+.form-input-container{
+    background: rgba(255,255,255,0.3);
+    padding: .5em;
+    border-radius: .5em;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: serif, Georgia, "Times New Roman";
+    color: rgb(19, 38, 62);
+    font-weight: 900;
+}
+li{
+}
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: .25em solid rgba(0,0,0,0.15);
+    border-radius: .5em;
+    background: initial;
+}
+
+.cover-small{
+    width: 50px;
+    height: 75px;
+    background: rgb(19, 38, 62);
+    color: rgb(250, 250, 250);
+    display: inline-block;
+}
+.cover-large{
+    width: 67px;
+    height: 100px;
+    background: rgb(19, 38, 62);
+    color: rgb(250, 250, 250);
+}
+
+.adbar{
+    font-size: 8em;
+    color: rgb(52, 101, 164);
+    line-height: 1;
+    text-align:center;
+    margin: auto;
+    max-width: 100%;
+    background: rgb(138, 226, 52);
+}
+.card{
+}
+.card>*{
+    margin-bottom: 3em;
+}
+
+/* COMPLETE---> */
+ul.genres{
+    padding: unset;
+    
+    font-size: small;
+}
+ul.genres li{
+    display: inline-block;
+    margin: .2em;
+}
+ul.genres,ul.genres *{
+    color: rgb(255,255,255) !important;
+}
+ul.genres a{
+    background: rgb(52, 101, 164);
+    padding: 2px 4px;
+    border: solid thin rgb(204, 204, 204);
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+ul.newchapters, ul.newchapters a{
+    color: rgb(52, 101, 164);
+    text-decoration: none;
+}
+ul.newchapters{
+    font-size: 150%;
+    display: inline-block;
+    list-style: none;
+    padding: unset;
+}
+ul.pagination,
+ul.pagination ul{
+    text-align: center;
+    padding: unset;
+    margin: unset;
+    list-style: none;
+}
+ul.pagination a,
+ul.pagination span{
+    display: block;
+    padding: .2em;
+    font-size: 2em;
+    background: rgb(52, 101, 164);
+    color: white;
+    text-decoration: unset;
+}
+ul.pagination span,
+ul.pagination a:not(:link){
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+}
+ul.pagination .primary{
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+    
+}
+ul.pagination .secondary{
+    background: rgb(138, 226, 52);
+    color: rgb(19, 38, 62);
+    
+}
+/* <---COMPLETE */
+
+
+.nav.list>*{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav.list>*:not(ul)>*{
+    text-decoration: none;
+    color:rgb(138, 226, 52);
+    font-weight:800;
+    display: block;
+    font-size: 2em;
+    line-height: 2em;
+    padding: .2em;
+}
+.novel-listing{
+    overflow: auto;
+}
+.novel-listing>*{
+    display: inline-block;
+}
+.novel-listing>*:nth-child(1){
+    text-align: center;
+}
+.novel-listing>*:nth-child(1)>*{
+    margin: auto;
+}
+.novel-listing>*:nth-child(2){
+}
+.background{
+    
+    background: rgb(242, 242, 242);
+}
+.header{
+    background: rgb(52, 101, 164);
+}
+.content{
+    
+}
+.root{
+    
+    color: rgb(0, 0, 0);
+}
+/* ------------------------------ */
+
+.landscape{
+    width: 100%;
+}
+.portrait{
+    height: 100%;
+}
+.block{
+    display: block;
+}
+.vpadding{
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+.vbox{
+    display: table;
+    height: 100%;
+    table-layout:  fixed;
+}
+.vbox>*{
+    display: table-row;
+}
+.hbox{
+    display: table;
+    width: 100%;
+    table-layout:  fixed;
+}
+.hbox>*{
+    display: table-cell;
+    width: 1px;
+}
+.vbox>.box-expand{
+    height: 100%;
+}
+.hbox>.box-expand{
+    width: 100%;
+}
+.top{
+    margin: auto;
+    margin-top: unset;
+}
+.bottom{
+    margin: auto;
+    margin-bottom: unset;
+}
+.left{
+    margin: auto;
+    margin-left: unset;
+}
+.right{
+    margin: auto;
+    margin-right: unset;
+}
+.float-clear{
+    clear:both;
+}
+
+.list{
+    list-style: none;
+    padding: initial;
+}
+.list>*{
+    display: block;
+}
+
+.card{
+}
+/* ------------------------------ */
+@media screen and (min-width: 25em){
+    
+    .hpadding-s{ 
+        padding: 0 .5em;
+    }
+    ul.pagination li{
+        display: inline-block;
+    }
+    ul.pagination .left{
+        float:left;
+    }
+    ul.pagination .right{
+        float:right;
+    }
+    ul.pagination a,
+    ul.pagination span{
+        border-radius: 3px;
+        margin: 5px;
+    }
+    .novel-listing>*{
+        display: table-cell;
+    }
+    .novel-listing{
+        display: table;
+        table-layout: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+}
+@media screen and (min-width: 35em){
+    .hpadding-s,.hpadding-m{ 
+        padding: 0 1em;
+    }
+}
+@media screen and (min-width: 40em){
+    
+    .float-left-2{
+        float: left;
+    }
+    .float-right-2{
+        float: right;
+    }
+}
