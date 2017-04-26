@@ -2,10 +2,13 @@
     overflow-wrap: break-word;
     z-index: 1;
 }
-button:hover{
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
 }
 body{
-    font-size: 12px;
+    font-size: 16px;
     box-sizing: border-box;
     color: #444;
     margin:0;
@@ -258,8 +261,10 @@ ul.pagination .secondary{
     margin: auto;
     margin-right: unset;
 }
-.float-clear{
-    clear:both;
+.float-clear::after{
+    clear: both;
+    display: block;
+    content: "";
 }
 
 .list{
