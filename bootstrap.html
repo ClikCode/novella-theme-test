@@ -1,0 +1,89 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap_files/bootstrap.css"><link rel="stylesheet" type="text/css" href="bootstrap_files/style.css">
+<title>bootstrap</title>
+<script src="bootstrap_files/jquery-3.js"></script><script src="bootstrap_files/bootstrap.js"></script><script src="bootstrap_files/preview_image.js"></script>
+</head><body><div class="wrapper" style="height: 100%;">
+
+<div class="header"><nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Read<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Community</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search" type="text">
+        </div>
+        <button type="submit" class="success">Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Updates</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Messages</a></li>
+            
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div><div id="main" style="height: 100%;"><div style="max-width: 65em;margin: 0 auto;"><div><div class="adbar">AD</div></div><div class="vpadding hpadding-m"><div class="card content" style="position: relative;"><div class="text-center"><ul class="pager boxy">
+<li class="next"><a href="#">next</a></li><li style="margin: unset;" class="previous"><a href="#">prev</a></li><li><ul class="pagination inner"><li><a href="#">4</a>
+    </li><li><span>5</span>
+    </li><li><a href="#">6</a>
+    </li><li><a href="#">7</a>
+    </li><li><a href="#">8</a>
+    </li><li><a href="#">9</a>
+    </li><li><a href="#">10</a>
+    </li><li><a href="#">11</a>
+    </li><li><a href="#">12</a>
+    </li><li><a href="#">13</a>
+    </li></ul></li></ul></div><form class="hpadding-s" id="account_signup"><h1>SIGNUP ACCOUNT</h1><div class="form-group"><label for="email">email</label><input placeholder="email" name="email" class="form-control" type="text"></div><div class="form-group"><label for="username">username</label><input placeholder="username" name="username" class="form-control" type="text"></div><div class="form-group"><label for="password">password</label><input placeholder="password" name="password" class="form-control" type="password"></div><div class="form-group"><label for="confirm password">confirm password</label><input name="confirm_password" placeholder="confirm password" class="form-control" type="password"></div><div><div><img alt="Novella logo" id="avatar_preview" class="avatar" src="bootstrap_files/novella.svg" width="100"></div><input name="avatar" id="avatar_file" onchange="previewImage(event,$('#account_signup #avatar_preview'));" type="file"></div><div><input value="LOGIN" type="submit"></div></form><form class="hpadding-s" id="account_login"><h1>LOGIN ACCOUNT</h1><div class="form-group"><label for="username">username</label><input placeholder="username" name="username" class="form-control" type="text"></div><div class="form-group"><label for="password">password</label><input placeholder="password" name="password" class="form-control" type="password"></div><div><label><input name="remember session" checked="checked" type="checkbox"><span> remember me</span></label></div><div><input value="LOGIN" type="submit"></div></form><form id="account_avatar_change" class=""><h1>Change Avatar</h1><div><div><img alt="" id="old_avatar" class="avatar" src="bootstrap_files/novella.svg"><img alt="" id="new_avatar" class="avatar" src="bootstrap_files/novella.svg"></div><input onchange="previewImage(event,$('#account_avatar_change #new_avatar'))" autocomplete="autocomplete" type="file"></div><input value="upload" class="btn" type="submit"></form><form id="account_password_change"><h1>Change Password</h1><input placeholder="old password" name="password" class="form-control" type="password"><input name="new_password" placeholder="new password" class="form-control" type="password"><input name="confirm_password" placeholder="confirm password" class="form-control" type="password"><input value="submit" type="submit"></form><form class="hpadding-s" id="chapter_new"><h1>New Chapter/Edit Chapter</h1><img alt="Novella default cover" class="cover large" src="bootstrap_files/novella.svg"><h2>Selected Book's Title</h2><input name="submit" value="change book" type="submit"><input placeholder="Chapter Title" name="title" autocomplete="autocomplete" class="form-control" type="text"><textarea style="resize: vertical; " placeholder="Content" name="content" autocomplete="autocomplete" class="form-control"></textarea><input placeholder="auto tags" disabled="disabled" class="form-control" type="text"><input placeholder="author's tags" name="tags" autocomplete="autocomplete" class="form-control" type="text"><input name="submit" value="save draft" type="submit"><input value="publish" name="submit" type="submit"></form><form id="novel_new"><h1>New Book/Edit Book</h1><input placeholder="Title" autocomplete="autocomplete" class="form-control" type="text"><textarea style="resize: vertical; height: 234px;" placeholder="Description" autocomplete="autocomplete" class="form-control"></textarea><select placeholder="genre" autocomplete="autocomplete" class="form-control"><option selected="selected">fantasy</option><option>sci-fi</option><option>romance</option><option>mystery</option></select><input placeholder="tags" autocomplete="autocomplete" class="form-control" type="text"><div><div><img alt="Novella default cover" id="novel_cover" src="bootstrap_files/novella.svg" class="cover large"></div><input onchange="previewImage(event,$('#novel_new #novel_cover'))" autocomplete="autocomplete" type="file"><div style="font-size: small;">Cover Image should be 300px tall and 200px wide</div></div><input value="submit" type="submit"></form><div id="novel_view"><h1>Title of book in listing</h1><div><div><img alt="Novella default cover" src="bootstrap_files/novella.svg" class="cover large"><div>last update: Nov 20 2016</div><div>rating: 0.3/0.5 68%</div><div>release rate: 1.3/day</div><div>33 chapters</div><div>56346 words</div><div>6321 comments</div></div><div><p>description
+ x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+ x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+ x x x x x x x x x x x x x x x description description description 
+description description description description description description 
+escription description description description description description 
+description description description description description </p></div></div></div><div class="reading" id="chapter_view"><h1 class="reading-title">Chapter    title</h1><div class="reading-content hpadding-s">
+<p>content content content content content content content content 
+content content content content content content content content content 
+content content content content content content content content content 
+content content content content content content content content content 
+content content content content content content content content content 
+content content content content content content content content </p><p><span style="display: block;"><span>Strength</span><span class="reading-content-table-seperator"> = </span><span>20</span><span class="reading-content-table-seperator"> *</span><span>strength determines the ammount of damage you inflict.</span></span><span style="style: block;"><span>Intelligence</span><span class="reading-content-table-seperator"> = </span><span>10</span><span class="reading-content-table-seperator"> *</span><span>intelligence determines how easy it is to learn a new skill.</span></span></p><p>content
+ content content content content content content content content content
+ content content content content content content content content content
+ content content content content content content content content content
+ content content content content content content content content content
+ content content content content content content content content content
+ content content content content content content </p></div><ul class="pagination list"><li class="float-right"><a href="#" class="primary">next</a></li><li class="float-left"><a href="#" class="primary">prev</a></li><li><a href="#" class="secondary">index</a></li></ul></div><div id="novel_listing_description" class="float-clear"><h1>Title of book in listing</h1><div class="float-left"><img alt="Novella default cover" src="bootstrap_files/novella.svg" class="cover small"><div>last update:</div><div>Nov 20 2016</div></div><div style="overflow: auto;" class="hpadding-s"><p>description
+ x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+ x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+ x x x x x x x x x x x x x x x description description description 
+description description description description description description 
+escription description description description description description 
+description description description description description </p></div></div>
+    <div id="novel_listing_stats"><h1>Book Title</h1><div><div><span>release rate: </span><span>1.3/day</span></div><div><span>readers: </span><span>123694</span></div><div><span>comments: </span><span>32156</span></div><div><span>readers: </span><span>123</span></div></div><ul class="genres"><li><a href="#">FANTASY</a></li><li><a href="#">ADVENTURE</a></li></ul></div><dl class="newchapters" id="new_chapter_listing"><dt><a href="#">book name</a> - <a href="#">chapter new</a> - <a href="#">author</a></dt><dt><ul class="genres"><li><a href="#">FANTASY</a></li><li><a href="#">ADVENTURE</a></li><li><a href="#">RIDDLES</a></li></ul></dt></dl>
+
+<form id="post_comment"><h1>Post Comment</h1><textarea class="landscape" id="comment" name="comment" style="  resize: vertical;" autocomplete="autocomplete"></textarea><input value="Post" type="submit"></form></div></div><div><div class="adbar">AD</div></div></div></div><div id="footer" style="line-height: 3em;text-align: center;vertical-align: middle;background: #626262;color: #cccccc;font-size: 2em;">copyright Novella</div></div></body></html>

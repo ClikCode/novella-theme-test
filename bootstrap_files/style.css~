@@ -1,72 +1,24 @@
 *{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    font-size: 100%;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: serif, Georgia, "Times New Roman";
-    color: rgb(138, 226, 52);
-    font-weight: 900;
-    background-color: rgb(52, 101, 164);
-    padding: .8em .4em;
-    margin: .5em 0;
-}
-li{
-}
-select,
-input,textarea,button{
-    font-size: 16px;
-    line-height: 1.5;
-    padding: .25em .5em .25em .5em;
-    vertical-align: top;
-    max-width: 100%;
-}
-input[type=text]{
-    width:100%;
-    max-width: 15em;
-}
-select,
-input,
-button,
-textarea{
-    border: solid thin lightblue; 
-    border-radius: 7px;
-    margin: unset;
-}
-button,input[type=submit]{
-    transition: box-shadow .1s;
-    background: rgb(138, 226, 52);
-    border: none;
-}
-button:hover,input[type=submit]:hover{
-    background: rgb(138, 226, 52);
-}
-.bar{
-    background: rgb(128, 128, 128);
-    color: white;
-}
-.inner{
-    margin: 0;
-}
-.padding{
-    padding: 1em 0;
-}
-.theme-subtle{
-    background: palegreen !important;
-    
-    color: darkslategrey;
-}
-.theme-activate{
-    
-    background-color: green !important;
-    color: whitesmoke;
+    overflow-wrap: break-word;
+    z-index: 1;
 }
 .avatar{
     width: 100px;
     height: 100px;
     border-radius: 25%;
+}
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #444;
+    margin:0;
+    font-size-adjust: 0.5;
+    line-height: 1;
+    font-family: Arial, sans-serif, Helvetica;
+    vertical-align: top;
+    vertical-align: top;
+}
+input,button{
 }
 .reading-navigation{
     margin: auto;
@@ -100,6 +52,25 @@ button:hover,input[type=submit]:hover{
     padding: .5em;
     border-radius: .5em;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: serif, Georgia, "Times New Roman";
+    color: rgb(19, 38, 62);
+    font-weight: 900;
+}
+li{
+}
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: .25em solid rgba(0,0,0,0.15);
+    border-radius: .5em;
+    background: initial;
+}
 
 .cover-small{
     width: 50px;
@@ -111,18 +82,11 @@ button:hover,input[type=submit]:hover{
 .cover-large{
     width: 67px;
     height: 100px;
-    background: rgb(52, 101, 164);
-    color: rgb(250, 250, 250);
-}
-.cover-full{
-    width: 134px;
-    height: 200px;
-    background: rgb(52, 101, 164);
+    background: rgb(19, 38, 62);
     color: rgb(250, 250, 250);
 }
 
 .adbar{
-    display: none;
     font-size: 8em;
     color: rgb(52, 101, 164);
     line-height: 1;
@@ -201,10 +165,7 @@ ul.pagination .secondary{
 }
 /* <---COMPLETE */
 
-.nav.list{
-    line-height: 5;
-    vertical-align: bottom;
-}
+
 .nav.list>*{
     display: inline-block;
     vertical-align: middle;
@@ -249,8 +210,7 @@ ul.pagination .secondary{
 /* ------------------------------ */
 
 .landscape{
-    width: 100% !important;
-    max-width: unset !important;
+    width: 100%;
 }
 .portrait{
     height: 100%;
@@ -317,33 +277,9 @@ ul.pagination .secondary{
 
 .card{
 }
-
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
-.s33-min{
-    min-width: 33%;
-}
-.s50-min{
-    min-width: 50%;
-}
-.s66-min{
-    min-width: 66%;
-}
 /* ------------------------------ */
 @media screen and (min-width: 25em){
-    .s33,.group-s33>*{
-        width: 33%;
-    }
-    .s66{
-        width: 66%;
-    }
-    .s50,.group-s50>*{
-        width: 50%;
-    }
+    
     .hpadding-s{ 
         padding: 0 .5em;
     }
@@ -370,18 +306,11 @@ ul.pagination .secondary{
         max-width: 100%;
         height: 100%;
     }
-    .m25{
-        min-width: 25%;
+    .float-left{
+        float: left;
     }
-    
-    .m50,group-m50 > *{
-        min-width: 50%;
-    }
-    .m75{
-        min-width: 75%;
-    }
-    group-m50 > *{
-        border-radius: 0px !important;
+    .float-right{
+        float: right;
     }
 }
 @media screen and (min-width: 35em){
