@@ -1,0 +1,67 @@
+body{
+  margin: unset;
+}
+*{
+/*   box-sizing: border-box; */
+  max-inline-size: 100%;
+}
+input:not([type=submit]):not([type=reset]){
+  max-inline-size: 100%;
+  inline-size: 100%;
+}
+input[type=file],pre{
+  white-space: pre-wrap;
+}
+a{
+  color: rgb(147, 40, 23);
+  text-decoration: none;
+}
+
+/* ins::before,ins::after{
+  background: green;
+  content:"+";
+  color:black;
+  display: inline-block;
+}
+ins{
+  background: lightgreen;
+  color: darkgreen;
+  text-decoration: none;
+}
+del::before,del::after{
+  background: red;
+  content:"-";
+  color:black;
+  display: inline-block;
+}
+del{
+  background-color: pink;
+  color: darkred;
+  text-decoration: none;
+}
+code{
+  border: thin solid rgb(255,150,150);
+  border-radius: .3em;
+  font-family: initial;
+  color: rgb(255,50,50);
+  background-color: rgb(255,230,230);
+  
+} */
+
+
+.float-left{
+    float: left;
+}
+.float-container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+@media screen and (min-width: 300px){
+    .s25{width: 25%}
+    .s50{width: 50%}
+    .s75{width: 75%}
+    .s100{width: 100%}
+    .s33{width: 33.33333%}
+    .s66{width: 66.66666%}
+}
