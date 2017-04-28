@@ -1,18 +1,3 @@
-@font-face {
-    font-family: "myfont";
-    src: url('theme_files/System San Francisco Display Regular.ttf') format("truetype");
-}
-body{
-    background-color: rgb(250, 249, 245);
-    color: rgb(183, 177, 169);
-    line-height: 1.348;
-    font-size: 1.4em;
-    
-}
-p,*{
-    overflow: auto;
-    font-family: "myfont", sans-serif;
-}
 
 .pagination{
     text-align: center;
@@ -29,8 +14,33 @@ p,*{
 .cover{
     background: grey;
 }
-.cover.small{
+.cover-small{
     width: 67px;
     height: 100px;
     display: inline-block;
+}
+.container{
+    
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.float-container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.margin-right{
+    margin-right: 1rem;
+}
+@media screen and (min-width: 300px){
+    .s25{width: 25%}
+    .s50{width: 50%}
+    .s75{width: 75%}
+    .s100{width: 100%}
+    .s33{width: 33.33333%}
+    .s66{width: 66.66666%}
 }

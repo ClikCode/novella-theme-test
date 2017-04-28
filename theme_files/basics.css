@@ -1,13 +1,27 @@
+@font-face {
+    font-family: "San Francisco";
+    src: url("System San Francisco Display Regular.ttf") format("truetype");
+}
 body{
   margin: unset;
 }
+body{
+    background-color: rgb(250, 249, 245);
+    color: rgb(183, 177, 169);
+    line-height: 1.348;
+    font-size: 1.4rem;
+    font-size-adjust: 0.535;
+    font-family: "San Francisco", sans-serif;
+    
+}
 *{
 /*   box-sizing: border-box; */
-  max-inline-size: 100%;
+/*   max-inline-size: 100%; */
 }
-input:not([type=submit]):not([type=reset]){
+input:not([type=submit]):not([type=reset]),textarea{
   max-inline-size: 100%;
   inline-size: 100%;
+  margin-bottom: 1rem;
 }
 input[type=file],pre{
   white-space: pre-wrap;
@@ -17,27 +31,17 @@ a{
   text-decoration: none;
 }
 
-/* ins::before,ins::after{
-  background: green;
-  content:"+";
-  color:black;
-  display: inline-block;
-}
 ins{
-  background: lightgreen;
-  color: darkgreen;
-  text-decoration: none;
-}
-del::before,del::after{
-  background: red;
-  content:"-";
-  color:black;
-  display: inline-block;
+  background: rgb(206, 250, 206);
+  color: rgb(57, 167, 57);
+  border-radius: .25em;
 }
 del{
-  background-color: pink;
-  color: darkred;
-  text-decoration: none;
+  background-color: rgb(255, 215, 222);
+  color: rgb(224, 35, 35);
+  border-radius: .25em;
+}
+s{
 }
 code{
   border: thin solid rgb(255,150,150);
@@ -46,22 +50,45 @@ code{
   color: rgb(255,50,50);
   background-color: rgb(255,230,230);
   
-} */
+} 
+quote{
+  border: thin solid rgb(215, 209, 200);
+  border-radius: .3em;
+  font-family: initial;
+  color: rgb(154, 147, 139);
+  background-color: rgb(233, 231, 229);
+  
+} 
+pre{
+  box-shadow: inset 0px 0px 5px 0px rgb(138, 128, 115, 0.3);
+  border-radius: .5rem;
+  padding: .5rem;
+  color: rgb(138, 128, 115);
+  border: solid thin rgb(138, 128, 115, 0.3);
+}
 
 
-.float-left{
-    float: left;
+p,*{
+    overflow: auto;
 }
-.float-container::after{
-    content: "";
-    clear: both;
-    display: block;
+blockquote{
+    border-left: solid .6rem;
+    margin: 1rem 1rem;
+    padding: 2rem 1rem;
+    background: rgb(254, 250, 234);
+    color: rgb(165, 153, 121);
 }
-@media screen and (min-width: 300px){
-    .s25{width: 25%}
-    .s50{width: 50%}
-    .s75{width: 75%}
-    .s100{width: 100%}
-    .s33{width: 33.33333%}
-    .s66{width: 66.66666%}
+blockquote:before {
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0;
+}
+blockquote::after{
+    
+}
+input,button,textarea{
+/*   background-color: rgb(225, 223, 214); */
+/*   color: rgb(74, 67, 57); */
+/*   border-radius: 1rem; */
+  padding: .8rem 1rem;
 }
