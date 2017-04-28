@@ -67,7 +67,7 @@ button,input[type=submit]{
     border: none;
     color: rgb(250, 249, 245);
 }
-,button:hover,input[type=submit]:hover,input[type=reset]:hover{
+button:hover,input[type=submit]:hover,input[type=reset]:hover{
     background: rgb(137, 131, 107);
 }
 .theme-subtle{
@@ -78,7 +78,8 @@ button,input[type=submit]{
     background-color: rgb(115, 110, 90) !important;
     color: whitesmoke;
 }
-.theme-activate:hover.theme-subtle:hover,{
+.theme-activate:hover,
+.theme-subtle:hover{
     background-color: rgb(115,110,90) !important;;
 }
 .bar{
@@ -209,22 +210,22 @@ ul.pagination span{
     display: block;
     padding: .2em;
     font-size: 2em;
-    background: rgb(115, 110, 90);
+    background-color: rgb(115, 110, 90);
     color: rgb(250, 249, 245);
     text-decoration: unset;
 }
 ul.pagination span,
 ul.pagination a:not(:link){
-    background: rgb(162, 156, 130);
+    background-color: rgb(162, 156, 130);
     color: rgb(250, 249, 245);
 }
 ul.pagination .primary{
-    background: rgb(115, 110, 90);
+    background-color: rgb(115, 110, 90);
     color: rgb(250, 249, 245);
     
 }
 ul.pagination .secondary{
-    background: rgb(162, 156, 130);
+    background-color: rgb(162, 156, 130);
     color: rgb(250, 249, 245);
     
 }
