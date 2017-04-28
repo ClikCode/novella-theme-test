@@ -19,8 +19,8 @@ body{
 /*   max-inline-size: 100%; */
 }
 input:not([type=submit]):not([type=reset]),textarea{
-  max-inline-size: 100%;
-  inline-size: 100%;
+  max-width: 100%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 input[type=file],pre{
