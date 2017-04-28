@@ -11,7 +11,8 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 900;
     background-color: rgb(52, 101, 164);
     padding: .8em .4em;
-    margin: .5em 0;
+    margin: 0;
+    margin-bottom: 0.5em;
 }
 li{
 }
@@ -31,7 +32,7 @@ select,
 input,
 button,
 textarea{
-    border: solid thin lightblue; 
+    border: solid thin grey; 
     border-radius: 7px;
     margin: unset;
 }
@@ -318,12 +319,6 @@ ul.pagination .secondary{
 .card{
 }
 
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
 .s33-min{
     min-width: 33%;
 }
@@ -334,7 +329,13 @@ ul.pagination .secondary{
     min-width: 66%;
 }
 /* ------------------------------ */
-@media screen and (min-width: 25em){
+@media screen and (min-width: 200px){
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
     .s33,.group-s33>*{
         width: 33%;
     }
@@ -384,12 +385,12 @@ ul.pagination .secondary{
         border-radius: 0px !important;
     }
 }
-@media screen and (min-width: 35em){
+@media screen and (min-width: 300px){
     .hpadding-s,.hpadding-m{ 
         padding: 0 1em;
     }
 }
-@media screen and (min-width: 40em){
+@media screen and (min-width: 500px){
     
     .float-left-2{
         float: left;
