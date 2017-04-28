@@ -214,8 +214,7 @@ ul.pagination span{
     color: rgb(250, 249, 245);
     text-decoration: unset;
 }
-ul.pagination span,
-ul.pagination a:not(:link){
+ul.pagination span{
     background-color: rgb(162, 156, 130);
     color: rgb(250, 249, 245);
 }
