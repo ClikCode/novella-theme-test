@@ -1,0 +1,52 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #337;
+$u:8px;
+$x:$u*5;
+
+.pagination{
+    text-align: center;
+    background: $primary-color;
+    padding: $u;
+}
+
+.pagination>li{
+    display: inline-block;
+}
+.pagination>li>a,.pagination>li>span{
+    display: inline-block;
+}
+
+.center{margin-left:auto;margin-right: auto;}
+.cover{
+    background: grey;
+}
+.cover-small{
+    width: 67px;
+    height: 100px;
+    display: inline-block;
+}
+.container{
+    
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.float-container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.margin-right{
+    margin-right: 1rem;
+}
+@media screen and (min-width: 300px){
+    .s25{width: 25%}
+    .s50{width: 50%}
+    .s75{width: 75%}
+    .s100{width: 100%}
+    .s33{width: 33.33333%}
+    .s66{width: 66.66666%}
+}

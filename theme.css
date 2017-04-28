@@ -1,6 +1,6 @@
 .pagination {
   text-align: center;
-  padding: 8px; }
+  padding: unset; }
 
 .pagination > li {
   display: inline-block; }
