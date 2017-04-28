@@ -5,13 +5,16 @@
 *{
     box-sizing: border-box;
 }
-
+:root{
+    font-size: 1.4em;
+    font-size-adjust: 0.535;
+    line-height: 1.348;
+    
+}
 body{
     background-color: rgb(250, 249, 245);
     color: rgb(183, 177, 169);
-    line-height: 1.348;
-    font-size: 1.4rem;
-    font-size-adjust: 0.535;
+    font-size: 100%;
     font-family: "San Francisco", sans-serif;
     margin: 0;
     font-family: "San Francisco", serif, Georgia, "Times New Roman";
@@ -29,25 +32,30 @@ li{
 }
 select,
 input,textarea,button{
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.348;
     padding: .25em .5em .25em .5em;
     vertical-align: top;
     max-width: 100%;
     color: rgb(183, 177, 169);
 }
-textarea{
-    background: rgb(162, 156, 130);
+select{
+    color: initial;
+}
+textarea,input[type=text],input[type=password]{
+    background: rgb(236, 234, 223);
     
+    color: rgb(115, 110, 90);
+    border: thin solid rgb(203, 200, 187);
+}
+input[type=text][disabled]{
+    background: rgb(216, 216, 216);
+    
+    color: rgb(135, 135, 135);
 }
 input[type=text]{
     width:100%;
     max-width: 15em;
-}
-select,
-input,
-button,
-textarea{
 }
 button,input[type=submit]{
     transition: box-shadow .1s;
