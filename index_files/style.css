@@ -94,7 +94,8 @@ button,input[type=submit]{
 .avatar{
     width: 100px;
     height: 100px;
-    border-radius: 25%;
+    border-radius: 10%;
+    background: rgb(79, 74, 54);
 }
 .reading-navigation{
     margin: auto;
@@ -234,8 +235,8 @@ ul.pagination .secondary{
     vertical-align: bottom;
     padding: unset;
     margin: unset;
-    margin-bottom: 8px;
-    background: rgb(162, 156, 130);
+    margin-bottom: 32px;
+    background: rgb(79, 74, 54);
 }
 .nav.list>*{
     display: inline-block;
