@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "myfont";
+    src: url('theme_files/System San Francisco Display Regular.ttf') format("truetype");
+}
 body{
     background-color: rgb(250, 249, 245);
     color: rgb(183, 177, 169);
@@ -5,9 +9,11 @@ body{
     font-size: 1.4em;
     
 }
-*{
+p,*{
     overflow: auto;
+    font-family: "myfont", sans-serif;
 }
+
 .pagination{
     text-align: center;
     padding: unset;
